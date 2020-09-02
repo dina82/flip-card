@@ -1,0 +1,74 @@
+.container{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: #2bba99;
+    box-shadow: -3px 4px 20px 7px #383636;
+    justify-content: center;
+    padding: 130px 0 100px;
+    margin-top: 150px;
+    position: relative;
+}
+.container span{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: #fff;
+    padding: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #045f4a;
+}
+.container #game-start{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background: #045f4a;
+    text-decoration: none;
+    color: #fff;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.card{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    /* display: inline-block; */
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    margin: 10px
+}
+.card:hover{
+    cursor: pointer
+}
+ .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+.rotate {
+    transform: rotateY(180deg);
+}
+.rotate2 {
+    transform: rotateY(360deg);
+}
+.card .flip-card-front{
+z-index: 1;
+}
+.card .flip-card-back{
+    background-color: red;
+    color: white;
+    transform: rotateY(180deg);
+    z-index: 2;
+  }
